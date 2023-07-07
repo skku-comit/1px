@@ -5,16 +5,13 @@ const NavigationBar = () => {
   return(
     <div className="navigation-bar">
       <div className="navigation-tab">
-        <a href="/">Home</a>
-      </div>
-      <div className="navigation-tab">
         <a href="/">About</a>
       </div>
       <div className="navigation-tab">
-        <a href="/">Visit</a>
+        <a href="/">GUEST BOOK</a>
       </div>
       <div className="navigation-tab">
-        <a href="/">?</a>
+        <a href="/">CONTACT US</a>
       </div>
     </div>
   )
