@@ -1,15 +1,9 @@
-// components
-import NavigationBar from './components/NavigationBar/NavigationBar';
-// css
 import './App.css';
+import TopHeaderBar from './components/TopHeaderBar';
+import MainPage from './pages/MainPage';
 
 function App() {
-
-  return (
-    <div className="App">
-      <NavigationBar />
-    </div>
-  );
+  return <MainPage />;
 }
 
 export default App;
