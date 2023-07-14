@@ -1,30 +1,10 @@
-import React from 'react';
-
-// components
-import NavigationBar from './components/NavigationBar/NavigationBar';
-
-// css
+import logo from './logo.svg';
 import './App.css';
+import TopHeaderBar from './component/TopHeaderBar';
+import MainPage from './page/MainPage';
 
 function App() {
-  const numbers = [];
-
-  // Generate numbers from 1 to 100
-  for (let i = 1; i <= 100; i++) {
-    numbers.push(
-      <React.Fragment key={i}>
-        {i}
-        <br />
-      </React.Fragment>
-    );
-  }
-
-  return (
-    <div className="App">
-      {numbers}
-      <NavigationBar />
-    </div>
-  );
+  return <MainPage />;
 }
 
 export default App;
