@@ -1,13 +1,22 @@
+.maincontainer {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: scroll;
+  padding-right: 2%;
+}
 .introduction {
   font-weight: bold;
-  width: 70vw;
-  height: 60vh;
+  width: 30vw;
+  height: 65vh;
   justify-content: left;
   margin-left: 0.5vw;
   margin-right: 3vw;
 }
-
 .introduction > p {
   font-size: 10em;
   margin: 0;
+}
+.maincontainer::-webkit-scrollbar{
+  display: none;
 }

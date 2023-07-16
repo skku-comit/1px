@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import FilmSection from '../components/FilmSection';
 import TopHeader from '../components/TopHeaderBar';
-import FilmModal from '../components/FilmModal.js';
 import MainSection from '../components/MainSection';
 
 import classes from '../css/MainPage.module.css';
@@ -21,11 +19,7 @@ function MainPage(props) {
       <TopHeader />
       <div className={classes.mainsector}>
         <MainSection />
-        <FilmSection onClickFilm={onClickFilmSectionHandler}></FilmSection>
       </div>
-      {clickFilm && (
-        <FilmModal onClickBackdrop={onClickBackdropHandler}></FilmModal>
-      )}
     </React.Fragment>
   );
 }

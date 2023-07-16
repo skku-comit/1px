@@ -1,39 +1,4 @@
-.filmcontentContainer {
-  display: flex;
-  height: 60vh;
-}
-
-.filmcontainer {
-  overflow: auto;
-  position: absolute;
-  left: 70vw;
-  top: 15vh;
-  height: 70vh;
-  background-color: black;
-  width: 5000px;
-  font-size: 0;
-  flex-shrink: 0; /* 두 번째 div가 자동으로 크기를 줄이지 않음 */
-  min-width: 100%;
-}
-
-.whiteSection {
-  border-radius: 5px;
-  height: 3vh;
-  width: 30px;
-  margin-left: 0.35vw;
-  margin-right: 0.35vw;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  background-color: white;
-}
-
-.filmborder {
-  border: 0;
-  height: 5vh;
-}
-
-.border {
-  padding: 0;
-  display: flex;
-  list-style-type: none;
+.filmcontainer{
+	display: flex;
+	align-items: center;
 }
