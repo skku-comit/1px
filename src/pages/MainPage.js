@@ -1,11 +1,11 @@
 // imports
-import { useState } from 'react';
+import { useState } from "react";
 
 // components
-import MainSection from '../components/MainSection';
+import MainSection from "../components/MainSection";
 
 // css
-import classes from '../css/MainPage.module.css';
+import classes from "../css/MainPage.module.css";
 
 function MainPage(props) {
   const [clickFilm, setClickFilm] = useState(false);
@@ -18,11 +18,9 @@ function MainPage(props) {
     setClickFilm(false);
   }
   return (
-    <>
-      <div className={classes.mainsector}>
-        <MainSection />
-      </div>
-    </>
+    <div className={classes['main-section']}>
+      <MainSection />
+    </div>
   );
 }
 

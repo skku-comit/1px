@@ -3,9 +3,8 @@ import TopHeaderBar from "./components/Layout/TopHeaderBar";
 
 // pages
 import MainPage from "./pages/MainPage";
-import AboutPage from './pages/AboutPage';
-import GuestBookPage from "./pages/GuestBookPage";
-
+import AboutPage from "./pages/AboutPage";
+import GuestbookPage from "./pages/GuestbookPage";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -15,8 +14,8 @@ function App() {
       <TopHeaderBar />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/about" element={<AboutPage/>}></Route>
-        <Route path="/guest-book" element={<GuestBookPage/>}/>
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/guest-book" element={<GuestbookPage />} />
       </Routes>
     </>
   );

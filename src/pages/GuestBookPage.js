@@ -1,12 +1,15 @@
-import React from 'react';
-import classes from '../css/guestbook.module.css';
+import React from "react";
 
-function GuestBookPage() {
+import GuestbookSection from '../components/GuestbookSection';
+
+import classes from '../css/GuestbookPage.module.css';
+
+function GuestbookPage() {
   return (
-    <>
-      Guest Book
-    </>
+    <div className={classes['guestbook-sector']}>
+      <GuestbookSection/>
+    </div>
   );
 }
 
-export default GuestBookPage;
+export default GuestbookPage;
