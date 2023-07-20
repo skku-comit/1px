@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
-import TopHeader from '../components/TopHeaderBar';
+// imports
+import { useState } from 'react';
+
+// components
 import MainSection from '../components/MainSection';
 
+// css
 import classes from '../css/MainPage.module.css';
 
 function MainPage(props) {
@@ -15,12 +18,11 @@ function MainPage(props) {
     setClickFilm(false);
   }
   return (
-    <React.Fragment>
-      <TopHeader />
+    <>
       <div className={classes.mainsector}>
         <MainSection />
       </div>
-    </React.Fragment>
+    </>
   );
 }
 

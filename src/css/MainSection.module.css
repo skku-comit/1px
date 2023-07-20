@@ -5,18 +5,21 @@
   overflow-x: scroll;
   padding-right: 2%;
 }
+
 .introduction {
   font-weight: bold;
   width: 30vw;
   height: 65vh;
   justify-content: left;
-  margin-left: 0.5vw;
-  margin-right: 3vw;
+  margin-left: 20px;
+  margin-right: 100px;
 }
+
 .introduction > p {
   font-size: 10em;
   margin: 0;
 }
+
 .maincontainer::-webkit-scrollbar{
   display: none;
 }

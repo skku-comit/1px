@@ -1,9 +1,25 @@
-import './App.css';
-import TopHeaderBar from './components/TopHeaderBar';
-import MainPage from './pages/MainPage';
+import "./App.css";
+import TopHeaderBar from "./components/Layout/TopHeaderBar";
+
+// pages
+import MainPage from "./pages/MainPage";
+import AboutPage from './pages/AboutPage';
+import GuestBookPage from "./pages/GuestBookPage";
+
+
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-  return <MainPage />;
+  return (
+    <>
+      <TopHeaderBar />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/about" element={<AboutPage/>}></Route>
+        <Route path="/guest-book" element={<GuestBookPage/>}/>
+      </Routes>
+    </>
+  );
 }
 
 export default App;
