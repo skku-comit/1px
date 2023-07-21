@@ -1,0 +1,19 @@
+.main-sector {
+  display: flex;
+  border-top: 3vh;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.button-sector {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  position: fixed;
+  bottom: 2vh;
+  right: 5vw;
+}
+
+.body {
+  overflow: auto;
+}

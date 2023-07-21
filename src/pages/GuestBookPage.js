@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import GuestbookSection from '../components/GuestbookSection';
+import GuestbookSection from '../components/GuestBook/GuestbookSection';
 
-import classes from '../css/GuestbookPage.module.css';
+import classes from './GuestbookPage.module.css';
 
 function GuestbookPage() {
   return (
     <div className={classes['guestbook-sector']}>
-      <GuestbookSection/>
+      <GuestbookSection />
     </div>
   );
 }

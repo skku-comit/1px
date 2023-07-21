@@ -1,13 +1,24 @@
-import {Link} from 'react-router-dom';
-import Logo from '../Common/Logo';
-import classes from '../../css/topheaderbar.module.css';
+import { Link } from 'react-router-dom';
+import classes from './TopHeaderBar.module.css';
 
 function TopHeaderBar(props) {
   return (
     <div className={classes.header}>
-      <Link to={"/"}><Logo/></Link>
-      <Link to={"/about"} className={classes["nav-container"]}>About</Link>
-      <Link to={"/guest-book"} className={classes["nav-container"]}>Guest Book</Link>
+      <Link to={'/'} className={classes.linkdecoration}>
+        <div className={classes['logo-container']}>
+          <h1 className={classes.logo}>1PX</h1>
+        </div>
+      </Link>
+      <Link to={'./about'} className={classes.linkdecoration}>
+        <div className={classes['about-container']}>
+          <p className={classes.about}>About</p>
+        </div>
+      </Link>
+      <Link to={'./guest-book'} className={classes.linkdecoration}>
+        <div className={classes['guestbook-container']}>
+          <p className={classes.guestbook}>Guest Book</p>
+        </div>
+      </Link>
     </div>
   );
 }
