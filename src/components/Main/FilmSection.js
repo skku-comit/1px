@@ -3,32 +3,50 @@ import classes from './Filmsection.module.css';
 import Film from './Film';
 import { ReactComponent as Filmbody } from '../../assets/images/film_body.svg';
 
+import film1 from '../../assets/images/film1.png'
+import film2 from '../../assets/images/film2.png'
+import film3 from '../../assets/images/film3.png'
+import film4 from '../../assets/images/film4.png'
+import film5 from '../../assets/images/film5.png'
+import film6 from '../../assets/images/film6.png'
+import film7 from '../../assets/images/film7.png'
+const filmStyle = {
+  width:"100%",
+  height: "100%"
+}
+
 const FilmSection = React.forwardRef((props, ref) => {
   return (
     <div className={classes['filmsection-container']}>
       <Filmbody></Filmbody>
-
       <div ref={ref} className={classes.filmcontentContainer}>
         <Film id="film-1" onClick={props.onClickFilm}>
           Section1
+          <img src={film1} style={filmStyle}/>
         </Film>
         <Film id="film-2" onClick={props.onClickFilm}>
           Section2
+          <img src={film2} style={filmStyle}/>
         </Film>
         <Film id="film-3" onClick={props.onClickFilm}>
           Section3
+          <img src={film3} style={filmStyle}/>
         </Film>
         <Film id="film-4" onClick={props.onClickFilm}>
           Section4
+          <img src={film4} style={filmStyle}/>
         </Film>
         <Film id="film-5" onClick={props.onClickFilm}>
           Section5
+          <img src={film5} style={filmStyle}/>
         </Film>
         <Film id="film-6" onClick={props.onClickFilm}>
           Section6
+          <img src={film6} style={filmStyle}/>
         </Film>
         <Film id="film-7" onClick={props.onClickFilm}>
           Section7
+          <img src={film7} style={filmStyle}/>
         </Film>
       </div>
     </div>
