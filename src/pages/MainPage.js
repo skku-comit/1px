@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-import FilmSection from '../components/Main/FilmSection';
-import FilmModal from '../components/Main/FilmModal';
-import MainSection from '../components/Main/MainSection';
+import FilmSection from '../components/main/FilmSection';
+import FilmModal from '../components/main/FilmModal';
+import MainSection from '../components/main/MainSection';
 import {
   LeftScrollButton,
   RightScrollButton,
-} from '../components/Main/ScrollButton';
+} from '../components/main/ScrollButton';
 
 import classes from './MainPage.module.css';
 

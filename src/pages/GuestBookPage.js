@@ -1,6 +1,6 @@
 import React from 'react';
 
-import GuestbookSection from '../components/GuestBook/GuestbookSection';
+import GuestbookSection from '../components/guestbook/GuestbookSection';
 
 import classes from './GuestbookPage.module.css';
 

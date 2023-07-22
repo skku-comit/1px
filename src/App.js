@@ -1,6 +1,6 @@
 import "./App.css";
 
-import TopHeaderBar from "./components/Layout/TopHeaderBar";
+import TopHeaderBar from "./components/layout/TopHeaderBar";
 
 // pages
 import MainPage from "./pages/MainPage";
