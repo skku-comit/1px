@@ -1,12 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-import FilmSection from '../components/MainPage/FilmSection';
-import TopHeaderBar from '../components/Layout/TopHeaderBar';
-import FilmModal from '../components/MainPage/FilmModal.js';
-import MainSection from '../components/MainPage/MainSection';
+import FilmSection from '../components/Main/FilmSection';
+import FilmModal from '../components/Main/FilmModal';
+import MainSection from '../components/Main/MainSection';
 import {
   LeftScrollButton,
   RightScrollButton,
-} from '../components/MainPage/ScrollButton';
+} from '../components/Main/ScrollButton';
 
 import classes from './MainPage.module.css';
 
@@ -103,7 +102,6 @@ function MainPage(props) {
 
   return (
     <div className={classes.body} ref={scrollData}>
-      <TopHeaderBar />
       <div className={classes['main-sector']}>
         <MainSection ref={mainSectionInfo} />
         <FilmSection
