@@ -1,13 +1,13 @@
-import "./App.css";
+import './App.css';
 
-import TopHeaderBar from "./components/layout/TopHeaderBar";
+import TopHeaderBar from './components/Layout/TopHeaderBar';
 
 // pages
-import MainPage from "./pages/MainPage";
-import AboutPage from "./pages/AboutPage";
-import GuestbookPage from "./pages/GuestbookPage";
+import MainPage from './pages/MainPage';
+import AboutPage from './pages/AboutPage';
+import GuestbookPage from './pages/GuestbookPage';
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
