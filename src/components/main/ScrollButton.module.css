@@ -1,0 +1,14 @@
+.button-left {
+  transform: scaleX(-1);
+}
+
+.button {
+  height: 7vh;
+  width: 7vh;
+  margin-left: 5vw;
+}
+
+.buttonImg {
+  height: 100%;
+  width: 100%;
+}

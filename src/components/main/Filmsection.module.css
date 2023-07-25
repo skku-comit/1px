@@ -1,0 +1,20 @@
+.filmcontentContainer {
+  display: flex;
+  height: 60vh;
+  position: absolute;
+  margin-left: 0.35%;
+  margin-right: 0.35%;
+  top: 11.9%;
+  bottom: 12%;
+  width: 100%;
+  height: 74.6%;
+}
+.filmsection-container {
+  position: absolute;
+  left: 70vw;
+  top: 15vh;
+  font-size: 0;
+  flex-shrink: 0; /* 두 번째 div가 자동으로 크기를 줄이지 않음 */
+  min-width: 100%;
+  z-index: 0;
+}

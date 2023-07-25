@@ -1,0 +1,16 @@
+.introduction {
+  position: absolute;
+  font-weight: bold;
+  top: 8vh;
+  width: 70vw;
+  height: 65vh;
+  justify-content: left;
+  margin-left: 0.5vw;
+  margin-right: 3vw;
+  margin-top: 0.1vh;
+}
+
+.introduction > p {
+  font-size: 10em;
+  margin: 0;
+}
