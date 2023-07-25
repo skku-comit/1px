@@ -12,9 +12,13 @@
 }
 
 .guestbook-add-button{
+  width: 50px;
   display: flex;
   justify-content: center;
-  margin: 50px;
+  
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .guestbook-title{

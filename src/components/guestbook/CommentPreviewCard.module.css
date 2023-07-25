@@ -1,0 +1,19 @@
+.comment-card{
+
+    width: 18vw;
+    height: 12vw;
+    margin-bottom: 2vw;
+}
+.comment-card_img{
+
+    width:inherit;
+    height: inherit;
+    object-fit: fill;
+}
+.text{
+    position:relative;
+    width: 16vw;
+    height: 10vw;
+    top: -11vw;
+    left: 1vw;
+}
