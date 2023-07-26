@@ -5,7 +5,7 @@ import TopHeaderBar from './components/layout/TopHeaderBar';
 // pages
 import MainPage from './pages/MainPage';
 import AboutPage from './pages/AboutPage';
-import GuestBookPage from './pages/GuestBookPage';
+import GuestBookPage from './pages/GuestbookPage';
 
 import { Routes, Route } from 'react-router-dom';
 
