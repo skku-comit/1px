@@ -28,7 +28,7 @@ function CommentPreviewContainer() {
   return (
     <div className={classes["container"]}>
       {dummyData.map(
-        (data) =>{return <CommentPreviewCard content={data}/>}
+        (data) => <CommentPreviewCard key={data.id} content={data.content} />
       )}
     </div>
   );
