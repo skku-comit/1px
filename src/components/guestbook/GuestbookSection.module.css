@@ -6,19 +6,16 @@
   width: 70vw;
   height: 65vh;
   justify-content: left;
-  margin-left: 0.5vw;
-  margin-right: 3vw;
-  margin-top: 0.1vh;
 }
 
 .guestbook-add-button{
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  background-image: url('../../assets/images/guestbook_add_button.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 170px;
+  height: 50px;
+  border: 0;
+  margin: 50px 420px;
 }
 
 .guestbook-title{
