@@ -1,48 +1,46 @@
-.container{
-    width: inherit;
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-}
-.form{
-    width: inherit;
-    height: 410px;
-    overflow: hidden;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.textarea{
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 460px;
-    height: 350px;
-    resize: none;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 30px;
+.form {
+  width: inherit;
+  height: 410px;
+  overflow: hidden;
 }
 
-.cancel-button{
-    background-image: url('../../assets/images/guestbook_cancel_button.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: transparent;
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
-    margin-right: 10px;
-    border: 0;
-    cursor: pointer;
+.textarea {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 460px;
+  height: 350px;
+  resize: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 30px;
 }
 
-.submit-button{
-    background-image: url('../../assets/images/guestbook_submit_button.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 60px;
-    height: 40px;
-    border: 0;
-    margin-right: 15px;
-    cursor: pointer;
+.cancel-button {
+  background-image: url("../../assets/images/guestbook_cancel_button.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-image: url("../../assets/images/guestbook_submit_button.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 40px;
+  border: 0;
+  margin-right: 15px;
+  cursor: pointer;
 }

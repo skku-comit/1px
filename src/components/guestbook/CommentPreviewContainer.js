@@ -8,7 +8,7 @@ function CommentPreviewContainer({ comments }) {
       {comments.length === 0 && (
         <div className={classes["container2"]}>
           <div style={{ textAlign: "center", color: "black" }}>
-            <h1>방명록에 첫번째 글을 남겨보세요!</h1>
+            <h4 className={classes['no-text']}>방명록에 첫번째 글을 남겨보세요!</h4>
           </div>
         </div>
       )}
