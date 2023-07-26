@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/1px/static/css/main.df80c480.css",
-    "main.js": "/1px/static/js/main.f34929f2.js",
+    "main.css": "/1px/static/css/main.523cf8f0.css",
+    "main.js": "/1px/static/js/main.d0027a94.js",
     "static/js/787.28cb0dcd.chunk.js": "/1px/static/js/787.28cb0dcd.chunk.js",
     "static/media/film7.png": "/1px/static/media/film7.55850fea572a25354622.png",
     "static/media/film5.png": "/1px/static/media/film5.bb13048efe1473584d09.png",
@@ -11,13 +11,16 @@
     "static/media/film6.png": "/1px/static/media/film6.b345860676cad2e86c2b.png",
     "static/media/film4.png": "/1px/static/media/film4.96efc969c2000ea3c007.png",
     "static/media/film_body.svg": "/1px/static/media/film_body.6dd5922a2b3bd5bcff0da1e99b4b7d7d.svg",
+    "static/media/guestbook_commentCard.svg": "/1px/static/media/guestbook_commentCard.ad4fdad7f3359e1492941f0c6c132776.svg",
+    "static/media/guestbook_submit_button.svg": "/1px/static/media/guestbook_submit_button.6fbc123cc9346ebcbe07227fa4cb91fc.svg",
     "index.html": "/1px/index.html",
-    "main.df80c480.css.map": "/1px/static/css/main.df80c480.css.map",
-    "main.f34929f2.js.map": "/1px/static/js/main.f34929f2.js.map",
+    "static/media/guestbook_cancel_button.svg": "/1px/static/media/guestbook_cancel_button.d2efba4791bb3cbc84ec86b9b331f1b5.svg",
+    "main.523cf8f0.css.map": "/1px/static/css/main.523cf8f0.css.map",
+    "main.d0027a94.js.map": "/1px/static/js/main.d0027a94.js.map",
     "787.28cb0dcd.chunk.js.map": "/1px/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df80c480.css",
-    "static/js/main.f34929f2.js"
+    "static/css/main.523cf8f0.css",
+    "static/js/main.d0027a94.js"
   ]
 }
