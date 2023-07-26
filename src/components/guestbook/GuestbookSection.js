@@ -23,14 +23,24 @@ const GuestbookSection = () => {
 
   return (
     <>
-      {openForm && <NewCommentForm cancelHandler={closeFormHandler} onAddComment={addNewCommentHandler} />}
+      {openForm && (
+        <NewCommentForm
+          cancelHandler={closeFormHandler}
+          onAddComment={addNewCommentHandler}
+        />
+      )}
       <div className={classes["guestbook-contents"]}>
         <div className={classes["guestbook-titles"]}>
           <div className={classes["guestbook-title"]}>방명록을 남겨주세요</div>
           <div className={classes["guestbook-subtitle"]}>
             비방 / 욕설은 관리자에 의해 삭제될 수 있습니다.
           </div>
-          <button className={classes["guestbook-add-button"]} onClick={openFormHandler} />
+          <div className={classes["button-container"]}>
+            <button
+              className={classes["guestbook-add-button"]}
+              onClick={openFormHandler}
+            />
+          </div>
         </div>
 
         <CommentPreviewContainer comments={comments} />

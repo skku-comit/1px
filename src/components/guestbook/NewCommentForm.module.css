@@ -24,12 +24,25 @@
 }
 
 .cancel-button{
+    background-image: url('../../assets/images/guestbook_cancel_button.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
     width: 30px;
     height: 30px;
     margin-top: 10px;
     margin-right: 10px;
+    border: 0;
+    cursor: pointer;
 }
 
 .submit-button{
-    margin-right:15px;
+    background-image: url('../../assets/images/guestbook_submit_button.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 40px;
+    border: 0;
+    margin-right: 15px;
+    cursor: pointer;
 }
