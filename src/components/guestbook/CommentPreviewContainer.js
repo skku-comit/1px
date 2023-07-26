@@ -4,11 +4,20 @@ import CommentPreviewCard from "./CommentPreviewCard";
 
 function CommentPreviewContainer({ comments }) {
   return (
-    <div className={classes["container"]}>
-      {comments.map((data) => (
-        <CommentPreviewCard key={data.id} content={data.content} />
-      ))}
-    </div>
+    <>
+      {comments.length === 0 && (
+        <div className={classes["container2"]}>
+          <div style={{ textAlign: "center", color: "black" }}>
+            <h1>방명록에 첫번째 글을 남겨보세요!</h1>
+          </div>
+        </div>
+      )}
+      <div className={classes["container"]}>
+        {comments.map((data) => (
+          <CommentPreviewCard key={data.id} content={data.content} />
+        ))}
+      </div>
+    </>
   );
 }
 

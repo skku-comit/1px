@@ -16,6 +16,7 @@
   height: 50px;
   border: 0;
   margin: 50px 420px;
+  cursor: pointer;
 }
 
 .guestbook-title{
