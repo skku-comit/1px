@@ -22,31 +22,31 @@ const FilmSection = React.forwardRef((props, ref) => {
       <div ref={ref} className={classes.filmcontentContainer}>
         <Film id="film-1" onClick={props.onClickFilm}>
           Section1
-          <img src={film1} style={filmStyle}/>
+          <img src={film1} alt="The Devil Wears Prada" style={filmStyle}/>
         </Film>
         <Film id="film-2" onClick={props.onClickFilm}>
           Section2
-          <img src={film2} style={filmStyle}/>
+          <img src={film2} alt="Threads: Our Tapestry of Love" style={filmStyle}/>
         </Film>
         <Film id="film-3" onClick={props.onClickFilm}>
           Section3
-          <img src={film3} style={filmStyle}/>
+          <img src={film3} alt="Everything Everywhere All at Once" style={filmStyle}/>
         </Film>
         <Film id="film-4" onClick={props.onClickFilm}>
           Section4
-          <img src={film4} style={filmStyle}/>
+          <img src={film4} alt="Romantic Holiday" style={filmStyle}/>
         </Film>
         <Film id="film-5" onClick={props.onClickFilm}>
           Section5
-          <img src={film5} style={filmStyle}/>
+          <img src={film5} alt="Everything Everywhere All at Once"  style={filmStyle}/>
         </Film>
         <Film id="film-6" onClick={props.onClickFilm}>
           Section6
-          <img src={film6} style={filmStyle}/>
+          <img src={film6} alt="Legally Blonde"  style={filmStyle}/>
         </Film>
         <Film id="film-7" onClick={props.onClickFilm}>
           Section7
-          <img src={film7} style={filmStyle}/>
+          <img src={film7} alt="The French Dispatch" style={filmStyle}/>
         </Film>
       </div>
     </div>
