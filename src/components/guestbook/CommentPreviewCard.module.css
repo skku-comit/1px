@@ -1,15 +1,14 @@
-.comment-card{
-    background-image: url('../../assets/images/guestbook_commentCard.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: transparent;
-    width: 18vw;
-    height: 12vw;
-    margin-bottom: 2vw;
+.comment-card {
+  background-image: url("../../assets/images/guestbook_commentCard.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  width: 18vw;
+  height: 12vw;
 }
 
-.text{
-    position:relative;
-    width: 16vw;
-    height: 10vw;
+.comment-text {
+    border: 1px black solid;
+    width: inherit;
+    height: inherit;
 }
