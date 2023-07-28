@@ -12,7 +12,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <TopHeaderBar />
       <Routes>
         <Route path="/" element={<MainPage />} />
@@ -20,7 +20,7 @@ function App() {
         <Route path="/guest-book" element={<GuestBookPage />} />
         <Route path="/iframe-page" element={<IframePage />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
