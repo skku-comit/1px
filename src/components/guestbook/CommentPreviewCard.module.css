@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 1vw;
+  padding: 0.5vw;
   margin: 1vw;
 }
 
@@ -24,7 +24,7 @@
   background-size: contain;
   background-color: transparent;
   border: none;
-  width: 1vw;
-  height: 2vw;
+  width: 1.2vw;
+  height: 1.2vw;
   cursor: pointer;
 }
