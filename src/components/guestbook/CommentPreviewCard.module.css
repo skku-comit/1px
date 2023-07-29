@@ -3,11 +3,28 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
-  width: 18vw;
-  height: 12vw;
+  width: 15vw;
+  height: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1vw;
+  margin: 1vw;
 }
 
 .comment-text {
-    width: inherit;
-    height: inherit;
+    width: 15vw;
+    height: 8vw;
+}
+
+.delete-button{
+  background-image: url('../../assets/images/guestbook_delete_button.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  width: 1vw;
+  height: 2vw;
+  cursor: pointer;
 }

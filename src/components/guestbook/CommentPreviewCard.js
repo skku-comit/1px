@@ -4,6 +4,7 @@ function CommentPreviewCard({ content }) {
   return (
     <div className={classes["comment-card"]}>
       <div className={classes["comment-text"]}>{content}</div>
+      <button className={classes["delete-button"]}/>
     </div>
   );
 }
