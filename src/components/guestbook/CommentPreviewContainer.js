@@ -28,7 +28,7 @@ function CommentPreviewContainer({ collectionRef, db }) {
       }
     };
     getComment();
-  }, []);
+  }, [collectionRef]);
 
   return (
     <>
