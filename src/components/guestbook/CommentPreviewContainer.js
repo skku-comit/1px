@@ -1,11 +1,25 @@
-import React from "react";
+import {useState,useEffect} from "react";
 
 // firebase
-
+import {getDocs} from 'firebase/firestore'
 import classes from "./CommentPreviewContainer.module.css";
 import CommentPreviewCard from "./CommentPreviewCard";
 
-function CommentPreviewContainer({ comments }) {
+function CommentPreviewContainer({ collectionRef }) {
+  const [comments, setComments] = useState([])
+
+  useEffect(() => {
+    const getComment = async () => {
+      await getDocs(collectionRef).then((comment) => {
+        let commentData = comment.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+        setComments(commentData)
+        }).catch((err) => {
+          console.log(err);
+        })
+      }
+    getComment()
+    }, [])
+
   return (
     <>
       {comments.length === 0 && (
@@ -16,8 +30,8 @@ function CommentPreviewContainer({ comments }) {
         </div>
       )}
       <div className={classes["container"]}>
-        {comments.map((data) => (
-          <CommentPreviewCard key={data.id} content={data.content} />
+        {comments.map(({comment,id}) => (
+          <CommentPreviewCard key={id} content={comment} />
         ))}
       </div>
     </>

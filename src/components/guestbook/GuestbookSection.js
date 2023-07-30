@@ -3,9 +3,12 @@ import classes from "./GuestbookSection.module.css";
 import NewCommentForm from "./NewCommentForm";
 import CommentPreviewContainer from "./CommentPreviewContainer";
 
+// firebase
+import { collection } from "firebase/firestore";
+import { db } from "../../services/firebase.config.js";
+
 const GuestbookSection = () => {
   const [openForm, setOpenForm] = useState(false);
-  const [comments, setComments] = useState([]); // track all comments
 
   const openFormHandler = () => {
     setOpenForm(true);
@@ -15,18 +18,14 @@ const GuestbookSection = () => {
     setOpenForm(false);
   };
 
-  const addNewCommentHandler = (comment) => {
-    setComments((prevComments) => [...prevComments, comment]);
-    // Close the form after submitting
-    closeFormHandler();
-  };
+  const collectionRef = collection(db, "comments");
 
   return (
     <>
       {openForm && (
         <NewCommentForm
           cancelHandler={closeFormHandler}
-          onAddComment={addNewCommentHandler}
+          collectionRef={collectionRef}
         />
       )}
       <div className={classes["guestbook-contents"]}>
@@ -43,7 +42,7 @@ const GuestbookSection = () => {
           </div>
         </div>
 
-        <CommentPreviewContainer comments={comments} />
+        <CommentPreviewContainer collectionRef={collectionRef} />
       </div>
     </>
   );

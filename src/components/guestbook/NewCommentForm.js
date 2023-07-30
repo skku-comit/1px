@@ -2,30 +2,25 @@
 import { useState } from "react";
 
 // firebase
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { db } from "../../services/firebase.config.js";
+import { addDoc, serverTimestamp } from "firebase/firestore";
 
 // components
 import CommentModal from "./CommentModal";
 import classes from "./NewCommentForm.module.css";
 
-const NewCommentForm = ({ cancelHandler, onAddComment }) => {
-  // collection
-  const collectionRef = collection(db, "comments");
+const NewCommentForm = ({ cancelHandler, collectionRef }) => {
   const [comment, setComment] = useState("");
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();
     if (comment.trim() === "") return; // Prevent empty comments
-    
-    onAddComment({ id: Date.now(), content: comment });
 
     try {
       await addDoc(collectionRef, {
         comment: comment,
         timestamp: serverTimestamp(),
       });
-
+      window.location.reload();
     } catch (err) {
       console.log(err);
     }
