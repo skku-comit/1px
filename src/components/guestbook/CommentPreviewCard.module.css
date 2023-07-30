@@ -8,18 +8,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 0.5vw;
-  margin: 1vw;
-}
+  padding: 1.5vw;
+  margin: 1vw;}
 
 .comment-text {
-    width: 15vw;
-    height: 8vw;
+  width: inherit;
+  height: inherit;
+  word-wrap: break-word; /* This property ensures the text wraps to the next line if it overflows the container's width */
+  max-width: 100%; /* Prevent the text from extending beyond the container's width */
+  max-height: 100%;
+  font-size: 16px;
 }
 
-.delete-button{
-  background-image: url('../../assets/images/guestbook_delete_button.png');
+.delete-button {
+  background-image: url("../../assets/images/guestbook_delete_button.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
@@ -27,4 +29,11 @@
   width: 1.2vw;
   height: 1.2vw;
   cursor: pointer;
+  align-self: flex-end;
+}
+
+@media (min-width: 2200px) {
+  .comment-text {
+    font-size: 24px;
+  }
 }

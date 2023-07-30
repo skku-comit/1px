@@ -31,14 +31,14 @@ const NewCommentForm = ({ cancelHandler, collectionRef }) => {
       <div className={classes["container"]}>
         <button className={classes["cancel-button"]} onClick={cancelHandler} />
         <form onSubmit={onSubmitHandler}>
-          <label htmlFor="comment" style={{ marginLeft: 20, marginTop: 40 }}>
+          <label htmlFor="comment" className={classes["comment-title"]}>
             Comment
           </label>
           <textarea
             className={classes["textarea"]}
             required
-            rows={3}
             value={comment}
+            maxLength={90}
             onChange={(e) => {
               setComment(e.target.value);
             }}
