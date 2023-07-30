@@ -5,7 +5,7 @@ import { getDocs, query, orderBy } from "firebase/firestore";
 import classes from "./CommentPreviewContainer.module.css";
 import CommentPreviewCard from "./CommentPreviewCard";
 
-function CommentPreviewContainer({ collectionRef }) {
+function CommentPreviewContainer({ collectionRef, db }) {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ function CommentPreviewContainer({ collectionRef }) {
       )}
       <div className={classes["container"]}>
         {comments.map(({ comment, id }) => (
-          <CommentPreviewCard key={id} content={comment} />
+          <CommentPreviewCard key={id} content={comment} db={db} id={id}/>
         ))}
       </div>
     </>

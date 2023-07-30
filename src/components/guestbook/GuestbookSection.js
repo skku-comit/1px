@@ -42,7 +42,7 @@ const GuestbookSection = () => {
           </div>
         </div>
 
-        <CommentPreviewContainer collectionRef={collectionRef} />
+        <CommentPreviewContainer collectionRef={collectionRef} db={db}/>
       </div>
     </>
   );
