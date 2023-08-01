@@ -35,6 +35,7 @@ const NewCommentForm = ({ cancelHandler, collectionRef }) => {
             Comment
           </label>
           <textarea
+            autoFocus
             className={classes["textarea"]}
             required
             value={comment}
