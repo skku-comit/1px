@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import FilmSection from '../components/main/FilmSection';
-import FilmModal from '../components/main/FilmModal';
 import MainSection from '../components/main/MainSection';
 import {
   LeftScrollButton,
@@ -20,20 +19,11 @@ function MainPage(props) {
       window.removeEventListener('scroll', scrollGetInfoHandler);
     };
   }, [currentFocusedElement]);
-  const [clickFilm, setClickFilm] = useState(false);
 
   //스크롤 이동을 위한 엘리멘트 획득 목적
   const filmSectionInfo = useRef();
   const mainSectionInfo = useRef();
   const scrollData = useRef();
-
-  function onClickFilmSectionHandler(e) {
-    setClickFilm(true);
-  }
-
-  function onClickBackdropHandler(e) {
-    setClickFilm(false);
-  }
 
   //버튼 클릭시 왼쪽 필름으로 화면이동 이벤트
   function clickLeftScrollButtonHandler() {
@@ -106,12 +96,8 @@ function MainPage(props) {
         <MainSection ref={mainSectionInfo} />
         <FilmSection
           ref={filmSectionInfo}
-          onClickFilm={onClickFilmSectionHandler}
         ></FilmSection>
       </div>
-      {clickFilm && (
-        <FilmModal onClickBackdrop={onClickBackdropHandler}></FilmModal>
-      )}
       <div className={classes['button-sector']}>
         <LeftScrollButton onClick={clickLeftScrollButtonHandler} />
         <RightScrollButton onClick={clickRightScrollButtonHandler} />
