@@ -6,8 +6,10 @@ import CommentPreviewContainer from "./CommentPreviewContainer";
 // firebase
 import { collection } from "firebase/firestore";
 import { db } from "../../services/firebase.config.js";
+import { async } from "@firebase/util";
 
 const GuestbookSection = () => {
+  
   const [openForm, setOpenForm] = useState(false);
 
   const openFormHandler = () => {
@@ -19,7 +21,6 @@ const GuestbookSection = () => {
   };
 
   const collectionRef = collection(db, "comments");
-
   return (
     <>
       {openForm && (
@@ -42,7 +43,7 @@ const GuestbookSection = () => {
           </div>
         </div>
 
-        <CommentPreviewContainer collectionRef={collectionRef} db={db}/>
+        <CommentPreviewContainer collectionRef={collectionRef} db={db} />
       </div>
     </>
   );
