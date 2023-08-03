@@ -63,7 +63,7 @@ export const IframePage6 = () => {
 export const IframePage7 = () => {
   return (
     <iframe
-      src="https://1px-diary.vercel.app"
+      src="https://french-dispatch.vercel.app"
       title="YouTube video player"
       className='iframe-container'
     />

@@ -36,11 +36,12 @@ const NewCommentForm = ({ cancelHandler, collectionRef }) => {
           </label>
           <textarea
             className={classes["textarea"]}
+            autoFocus
             required
             value={comment}
             maxLength={90}
             onChange={(e) => {
-              setComment(e.target.value);
+            setComment(e.target.value);
             }}
           />
           <button className={classes["submit-button"]} />
