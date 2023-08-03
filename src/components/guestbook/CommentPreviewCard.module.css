@@ -31,15 +31,6 @@
   cursor: pointer;
   align-self: flex-end;
 }
-.modal-content p{
-  display: inline-block;
-  margin-right: 1rem;
-}
-.button-container{
-  display: flex;
-  justify-content: right;
-  margin-right: .5rem;
-}
 
 @media (min-width: 2200px) {
   .comment-text {
