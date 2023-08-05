@@ -6,7 +6,6 @@ import CommentPreviewContainer from "./CommentPreviewContainer";
 // firebase
 import { collection } from "firebase/firestore";
 import { db } from "../../services/firebase.config.js";
-import { async } from "@firebase/util";
 
 const GuestbookSection = () => {
   

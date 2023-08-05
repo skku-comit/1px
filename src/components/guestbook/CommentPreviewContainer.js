@@ -1,4 +1,4 @@
-import { useState, useEffect, cloneElement, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // firebase
 import { getDocs, query, orderBy } from "firebase/firestore";
@@ -8,7 +8,7 @@ import CommentPreviewCard from "./CommentPreviewCard";
 const CommentPreviewContainer = ({ collectionRef, db }) => {
   // code for infinite scroll
   const [keepObserve, setKeepObserve] = useState(true);
-  const stopObserve = () => {setKeepObserve(false)};
+  // const stopObserve = () => {setKeepObserve(false)};
   const [loadCommentAmount, setLoadCommentAmount] = useState(3); // initial number of comments being shown.
   const [isloading, setIsloading] = useState(false);
   const footerRef = useRef(); //if the footer is observed, more comments are loaded.
@@ -25,10 +25,12 @@ const CommentPreviewContainer = ({ collectionRef, db }) => {
       }
     });
   };
+
   const observer = new IntersectionObserver(onIntersect, options);
+
   useEffect(() => {
     observer.observe(footerRef.current);
-  }, []);
+  }, [observer]);
 
   const [comments, setComments] = useState([]);
   const [partialComments, setPartialComments] = useState([]);
@@ -48,10 +50,10 @@ const CommentPreviewContainer = ({ collectionRef, db }) => {
         // console.log("loadCommentAmount: " + loadCommentAmount);
         // console.log(partialComments);
       };
-    setTimeout(()=>{
-    parseComment();
-    setIsloading(false);
-    },500);
+    setTimeout(() => {
+      parseComment();
+      setIsloading(false);
+    }, 500);
   }, [loadCommentAmount, comments]);
   //end of code for infinite scroll
 
@@ -71,7 +73,6 @@ const CommentPreviewContainer = ({ collectionRef, db }) => {
         }));
 
         setComments(commentData);
-        
       } catch (err) {
         console.log(err);
       }
