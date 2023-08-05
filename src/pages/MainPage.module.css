@@ -2,14 +2,14 @@
   overflow: auto;
 }
 
-.main-container {
+.main-sector {
   display: flex;
   border-top: 3vh;
   height: 80vh;
   overflow: hidden;
 }
 
-.button-container {
+.button-sector {
   width: 20vw;
   height: 10vh;
   display: flex;
