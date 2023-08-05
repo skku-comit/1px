@@ -1,4 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+// imports
+import { useState, useRef, useEffect } from 'react';
+
+// components
 import FilmSection from '../components/main/FilmSection';
 import MainSection from '../components/main/MainSection';
 import {
@@ -6,9 +9,10 @@ import {
   RightScrollButton,
 } from '../components/main/ScrollButton';
 
+// css
 import classes from './MainPage.module.css';
 
-function MainPage(props) {
+const MainPage = () => {
   const [currentFocusedElement, setCurrentFocusedElement] = useState(0);
 
   //스크롤 감지 이벤트 추가
@@ -26,13 +30,13 @@ function MainPage(props) {
   const scrollData = useRef();
 
   //버튼 클릭시 왼쪽 필름으로 화면이동 이벤트
-  function clickLeftScrollButtonHandler() {
+  const clickLeftScrollButtonHandler = () => {
     const filmList = [
       mainSectionInfo.current,
       ...filmSectionInfo.current.children,
     ];
     if (currentFocusedElement > 0) {
-      console.log(filmList);
+      // console.log(filmList);
       filmList[currentFocusedElement - 1].scrollIntoView({
         behavior: 'smooth',
         inline: 'center',
@@ -42,13 +46,13 @@ function MainPage(props) {
   }
 
   //버튼 클릭시 오른쪽 필름으로 화면이동 이벤트
-  function clickRightScrollButtonHandler() {
+  const clickRightScrollButtonHandler = () => {
     const filmList = [
       mainSectionInfo.current,
       ...filmSectionInfo.current.children,
     ];
     if (currentFocusedElement < 7) {
-      console.log(filmList);
+      // console.log(filmList);
       filmList[currentFocusedElement + 1].scrollIntoView({
         behavior: 'smooth',
         inline: 'center',
@@ -58,16 +62,14 @@ function MainPage(props) {
   }
 
   //스크롤 바로 이동시에 중앙에 위치한 필름 넘버 감지
-  function scrollGetInfoHandler() {
+  const scrollGetInfoHandler = () => {
     const scrollX = window.scrollX;
-    console.log(scrollX);
+    // console.log(scrollX);
 
     if (scrollX === 0) {
-      console.log(0);
       setCurrentFocusedElement(0);
     }
     if (scrollX > 700 && scrollX < 1000) {
-      console.log(1);
       setCurrentFocusedElement(1);
     }
     if (scrollX > 1300 && scrollX < 1500) {
@@ -91,14 +93,14 @@ function MainPage(props) {
   }
 
   return (
-    <div className={classes.body} ref={scrollData}>
-      <div className={classes['main-sector']}>
+    <div className={classes['body']} ref={scrollData}>
+      <div className={classes['main-container']}>
         <MainSection ref={mainSectionInfo} />
         <FilmSection
           ref={filmSectionInfo}
         ></FilmSection>
       </div>
-      <div className={classes['button-sector']}>
+      <div className={classes['button-container']}>
         <LeftScrollButton onClick={clickLeftScrollButtonHandler} />
         <RightScrollButton onClick={clickRightScrollButtonHandler} />
       </div>

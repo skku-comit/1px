@@ -1,11 +1,11 @@
-import './IframePage.css'
+import './IframePage.css';
 
 export const IframePage1 = () => {
   return (
     <iframe
       src="https://1px-diary.vercel.app"
       title="YouTube video player"
-      className='iframe-container'
+      className="iframe-container"
     />
   );
 };
@@ -13,9 +13,9 @@ export const IframePage1 = () => {
 export const IframePage2 = () => {
   return (
     <iframe
-      src="https://1px-diary.vercel.app"
+      src="https://1px-string-page.vercel.app/"
       title="YouTube video player"
-      className='iframe-container'
+      className="iframe-container"
     />
   );
 };
@@ -25,7 +25,7 @@ export const IframePage3 = () => {
     <iframe
       src="https://1px-diary.vercel.app"
       title="YouTube video player"
-      className='iframe-container'
+      className="iframe-container"
     />
   );
 };
@@ -35,7 +35,7 @@ export const IframePage4 = () => {
     <iframe
       src="https://1px-diary.vercel.app"
       title="YouTube video player"
-      className='iframe-container'
+      className="iframe-container"
     />
   );
 };
@@ -45,7 +45,7 @@ export const IframePage5 = () => {
     <iframe
       src="https://px-comit.firebaseapp.com/"
       title="YouTube video player"
-      className='iframe-container'
+      className="iframe-container"
     />
   );
 };
@@ -55,7 +55,7 @@ export const IframePage6 = () => {
     <iframe
       src="https://1px-diary.vercel.app"
       title="YouTube video player"
-      className='iframe-container'
+      className="iframe-container"
     />
   );
 };
@@ -63,9 +63,9 @@ export const IframePage6 = () => {
 export const IframePage7 = () => {
   return (
     <iframe
-      src="https://1px-diary.vercel.app"
+      src="https://french-dispatch.vercel.app"
       title="YouTube video player"
-      className='iframe-container'
+      className="iframe-container"
     />
   );
 };

@@ -38,13 +38,14 @@ function CommentPreviewCard({ id, content, db }) {
   return (
     <div className={classes["comment-card"]}>
       <div className={classes["comment-text"]}>{content}</div>
-      {!showModal && <button className={classes["delete-button"]} onClick={deleteComment} />}
+      {!showModal && (
+        <button className={classes["delete-button"]} onClick={deleteComment} />
+      )}
 
       {/* Custom modal */}
       {showModal && (
         <div className={classes["modal"]}>
           <div className={classes["modal-content"]}>
-           
             <p>관리자 코드를 입력하세요:</p>
             <input
               type="password" // Use type="password" to hide the entered value
@@ -53,7 +54,12 @@ function CommentPreviewCard({ id, content, db }) {
             />
             <div className={classes["button-container"]}>
               <button onClick={handleConfirm}>확인</button>
-              <button className={classes["deletecancel-button"]} onClick={handleCancel}>취소</button>
+              <button
+                className={classes["deletecancel-button"]}
+                onClick={handleCancel}
+              >
+                취소
+              </button>
             </div>
           </div>
         </div>

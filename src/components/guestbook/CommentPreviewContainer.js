@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, cloneElement, useRef } from "react";
 
 // firebase
 import { getDocs, query, orderBy } from "firebase/firestore";
@@ -8,7 +8,7 @@ import CommentPreviewCard from "./CommentPreviewCard";
 const CommentPreviewContainer = ({ collectionRef, db }) => {
   // code for infinite scroll
   const [keepObserve, setKeepObserve] = useState(true);
-  // const stopObserve = () => {setKeepObserve(false)};
+  const stopObserve = () => {setKeepObserve(false)};
   const [loadCommentAmount, setLoadCommentAmount] = useState(3); // initial number of comments being shown.
   const [isloading, setIsloading] = useState(false);
   const footerRef = useRef(); //if the footer is observed, more comments are loaded.
@@ -25,12 +25,10 @@ const CommentPreviewContainer = ({ collectionRef, db }) => {
       }
     });
   };
-
   const observer = new IntersectionObserver(onIntersect, options);
-
   useEffect(() => {
     observer.observe(footerRef.current);
-  }, [observer]);
+  }, []);
 
   const [comments, setComments] = useState([]);
   const [partialComments, setPartialComments] = useState([]);
@@ -50,10 +48,10 @@ const CommentPreviewContainer = ({ collectionRef, db }) => {
         // console.log("loadCommentAmount: " + loadCommentAmount);
         // console.log(partialComments);
       };
-    setTimeout(() => {
-      parseComment();
-      setIsloading(false);
-    }, 500);
+    setTimeout(()=>{
+    parseComment();
+    setIsloading(false);
+    },500);
   }, [loadCommentAmount, comments]);
   //end of code for infinite scroll
 
@@ -77,7 +75,6 @@ const CommentPreviewContainer = ({ collectionRef, db }) => {
         console.log(err);
       }
     };
-    setIsloading(true);
     getComment();
   }, [collectionRef]);
 
@@ -93,12 +90,10 @@ const CommentPreviewContainer = ({ collectionRef, db }) => {
         </div>
       )}
       <div className={classes["container"]}>
-        {partialComments.map(({ comment, id }) => (
+        {comments.map(({ comment, id }) => (
           <CommentPreviewCard key={id} content={comment} db={db} id={id} />
         ))}
       </div>
-      {isloading && <div style={{ textAlign: "center" }}>Loading...</div>}
-      <div style={{ height: "1px" }} ref={footerRef}></div>
     </>
   );
 };
