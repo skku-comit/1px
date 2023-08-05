@@ -1,12 +1,15 @@
-import React from 'react';
-import classes from './MainSection.module.css';
+// imports
+import React from "react";
+
+// css
+import classes from "./MainSection.module.css";
 
 const MainSection = React.forwardRef((props, ref) => {
   return (
-    <div ref={ref} className={classes.introduction}>
-      <p>Mod</p>
-      <p>Comit</p>
-      <p>Project</p>
+    <div ref={ref} className={classes['introduction']}>
+      Mod <br />
+      CoMit <br />
+      Project
     </div>
   );
 });
