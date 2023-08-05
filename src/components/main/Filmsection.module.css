@@ -1,4 +1,4 @@
-.filmcontentContainer {
+.film-container {
   display: flex;
   height: 60vh;
   position: absolute;
@@ -10,7 +10,7 @@
   height: 74.7%;
 }
 
-.filmsection-container {
+.film-sector {
   position: absolute;
   left: 70vw;
   top: 15vh;
