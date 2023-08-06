@@ -13,11 +13,13 @@ const NewCommentForm = ({ cancelHandler, collectionRef }) => {
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();
-    if (comment.trim() === "") return; // Prevent empty comments
+    if (comment.trim() === "") return;
 
     try {
+      const commentWithLineBreaks = comment.split("\n").join("<br>");
+
       await addDoc(collectionRef, {
-        comment: comment,
+        comment: commentWithLineBreaks,
         timestamp: serverTimestamp(),
       });
       window.location.reload();
@@ -41,7 +43,7 @@ const NewCommentForm = ({ cancelHandler, collectionRef }) => {
             value={comment}
             maxLength={90}
             onChange={(e) => {
-            setComment(e.target.value);
+              setComment(e.target.value);
             }}
           />
           <button className={classes["submit-button"]} />
