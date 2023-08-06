@@ -1,10 +1,10 @@
-import React from 'react';
-
+// components
 import GuestbookSection from '../components/guestbook/GuestbookSection';
 
+// css
 import classes from './GuestbookPage.module.css';
 
-function GuestbookPage() {
+const GuestbookPage = () => {
   return (
     <div className={classes['guestbook-sector']}>
       <GuestbookSection />

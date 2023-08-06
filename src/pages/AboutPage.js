@@ -1,7 +1,7 @@
 import React from 'react';
 
 function AboutPage() {
-  return <>About</>;
+  return <>About Page</>;
 }
 
 export default AboutPage;
