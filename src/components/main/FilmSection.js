@@ -18,12 +18,15 @@ import film5 from "../../assets/images/film5.png";
 import film6 from "../../assets/images/film6.png";
 import film7 from "../../assets/images/film7.png";
 
-const FilmSection = React.forwardRef((props, ref) => {
+const FilmSection = React.forwardRef((ref) => {
+
+
+
   return (
     <div className={classes["films-container"]}>
       <Filmbody />
       <div ref={ref} className={classes['films-content']}>
-        <Film id="film-1" onClick={props.onClickFilm}>
+        <Film id="film-1">
           <Link to={"./iframe1"}>
             Section1
             <img
@@ -33,7 +36,7 @@ const FilmSection = React.forwardRef((props, ref) => {
             />
           </Link>
         </Film>
-        <Film id="film-2" onClick={props.onClickFilm}>
+        <Film id="film-2">
           <Link to={"./iframe2"}>
             Section2
             <img
@@ -43,7 +46,7 @@ const FilmSection = React.forwardRef((props, ref) => {
             />
           </Link>
         </Film>
-        <Film id="film-3" onClick={props.onClickFilm}>
+        <Film id="film-3">
           <Link to={"./iframe3"}>
             Section3
             <img
@@ -53,7 +56,7 @@ const FilmSection = React.forwardRef((props, ref) => {
             />
           </Link>
         </Film>
-        <Film id="film-4" onClick={props.onClickFilm}>
+        <Film id="film-4">
           <Link to={"./iframe4"}>
             Section4
             <img
@@ -63,7 +66,7 @@ const FilmSection = React.forwardRef((props, ref) => {
             />
           </Link>
         </Film>
-        <Film id="film-5" onClick={props.onClickFilm}>
+        <Film id="film-5">
           <Link to={"./iframe5"}>
             Section5
             <img
@@ -73,7 +76,7 @@ const FilmSection = React.forwardRef((props, ref) => {
             />
           </Link>
         </Film>
-        <Film id="film-6" onClick={props.onClickFilm}>
+        <Film id="film-6">
           <Link to={"./iframe6"}>
             Section6
             <img
@@ -83,7 +86,7 @@ const FilmSection = React.forwardRef((props, ref) => {
             />
           </Link>
         </Film>
-        <Film id="film-7" onClick={props.onClickFilm}>
+        <Film id="film-7">
           <Link to={"./iframe7"}>
             Section7
             <img
