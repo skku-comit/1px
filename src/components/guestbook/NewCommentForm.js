@@ -16,10 +16,9 @@ const NewCommentForm = ({ cancelHandler, collectionRef }) => {
     if (comment.trim() === "") return;
 
     try {
-      const commentWithLineBreaks = comment.split("\n").join("<br>");
-
+      console.log(comment)
       await addDoc(collectionRef, {
-        comment: commentWithLineBreaks,
+        comment: comment,
         timestamp: serverTimestamp(),
       });
       window.location.reload();

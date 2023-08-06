@@ -1,13 +1,13 @@
 .container {
-    width: 60vw;
-    height: auto;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  width: 60vw;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  white-space: pre-line;
+}
 
-  }
-  
-  .container_empty{
+.container_empty {
   width: 60vw;
   height: 100%;
   margin: 0 auto;
@@ -15,10 +15,10 @@
   flex-direction: column;
 }
 
-.no-text{
+.no-text {
   color: #b5b5b5;
 }
-.footer{
+.footer {
   width: 100%;
   height: 1rem;
   background-color: blue;
