@@ -8,9 +8,11 @@
   margin-left: 5vw;
   top: 80vw;
   left: 80vw;
+  z-index: 1;
+  cursor: pointer;
 }
 
-.buttonImg {
+.button-img {
   height: 100%;
   width: 100%;
 }

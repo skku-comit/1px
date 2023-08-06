@@ -18,9 +18,7 @@ import film5 from "../../assets/images/film5.png";
 import film6 from "../../assets/images/film6.png";
 import film7 from "../../assets/images/film7.png";
 
-const FilmSection = React.forwardRef((ref) => {
-
-
+const FilmSection = React.forwardRef((props, ref) => {
 
   return (
     <div className={classes["films-container"]}>
