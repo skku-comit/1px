@@ -1,6 +1,5 @@
-.film-container {
+.films-container {
   position: absolute;
-
   left: 70vw;
   top: 15vh;
   font-size: 0;
@@ -9,7 +8,7 @@
   z-index: 0;
 }
 
-.film-sector {
+.films-content {
   display: flex;
   height: 60vh;
   position: absolute;

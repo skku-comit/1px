@@ -20,9 +20,9 @@ import film7 from "../../assets/images/film7.png";
 
 const FilmSection = React.forwardRef((props, ref) => {
   return (
-    <div className={classes["film-container"]}>
+    <div className={classes["films-container"]}>
       <Filmbody />
-      <div ref={ref} className={classes['film-sector']}>
+      <div ref={ref} className={classes['films-content']}>
         <Film id="film-1" onClick={props.onClickFilm}>
           <Link to={"./iframe1"}>
             Section1

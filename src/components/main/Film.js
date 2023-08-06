@@ -1,13 +1,13 @@
 import classes from './Film.module.css';
 
-function Film(props) {
+const Film = ({id, onClick, children}) => {
   return (
     <div
-      id={props.id}
+      id={id}
       className={classes.filmcontainer}
-      onClick={props.onClick}
+      onClick={onClick}
     >
-      {props.children}
+      {children}
     </div>
   );
 }
