@@ -16,7 +16,6 @@ const NewCommentForm = ({ cancelHandler, collectionRef }) => {
     if (comment.trim() === "") return;
 
     try {
-      console.log(comment)
       await addDoc(collectionRef, {
         comment: comment,
         timestamp: serverTimestamp(),
@@ -37,10 +36,7 @@ const NewCommentForm = ({ cancelHandler, collectionRef }) => {
           </label>
           <textarea
             className={classes["textarea"]}
-            autoFocus
-            required
             value={comment}
-            maxLength={90}
             onChange={(e) => {
               setComment(e.target.value);
             }}
