@@ -101,8 +101,8 @@ const MainPage = () => {
         ></FilmSection>
       </div>
       <div className={classes['button-sector']}>
-        <LeftScrollButton onClick={clickLeftScrollButtonHandler} />
-        <RightScrollButton onClick={clickRightScrollButtonHandler} />
+        <LeftScrollButton onLeftScrollButtonClick={clickLeftScrollButtonHandler} />
+        <RightScrollButton onRightScrollButtonClick={clickRightScrollButtonHandler} />
       </div>
     </div>
   );

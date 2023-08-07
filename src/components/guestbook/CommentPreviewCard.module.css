@@ -30,6 +30,8 @@
   height: 1.2vw;
   cursor: pointer;
   align-self: flex-end;
+  margin-top: 8%;
+  position: fixed;
 }
 
 .modal-content p{

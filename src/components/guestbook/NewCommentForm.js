@@ -13,7 +13,7 @@ const NewCommentForm = ({ cancelHandler, collectionRef }) => {
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();
-    if (comment.trim() === "") return; // Prevent empty comments
+    if (comment.trim() === "") return;
 
     try {
       await addDoc(collectionRef, {
@@ -36,12 +36,9 @@ const NewCommentForm = ({ cancelHandler, collectionRef }) => {
           </label>
           <textarea
             className={classes["textarea"]}
-            autoFocus
-            required
             value={comment}
-            maxLength={90}
             onChange={(e) => {
-            setComment(e.target.value);
+              setComment(e.target.value);
             }}
           />
           <button className={classes["submit-button"]} />

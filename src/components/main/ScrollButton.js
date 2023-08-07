@@ -1,30 +1,30 @@
-import classes from './ScrollButton.module.css';
+import classes from "./ScrollButton.module.css";
 
-function LeftScrollButton(props) {
+const LeftScrollButton = ({ onLeftScrollButtonClick }) => {
   return (
     <div
-      className={`${classes.button} ${classes['button-left']}`}
-      onClick={props.onClick}
+      className={`${classes["button"]} ${classes["button-left"]}`}
+      onClick={onLeftScrollButtonClick}
     >
       <img
-        className={classes.buttonImg}
+        className={classes["button-img"]}
         src="https://assets.website-files.com/60ee32414a2efcb87f4a2940/60ee32414a2efcf93a4a29b3_arrow-scroll.svg"
         alt="LeftButton"
       />
     </div>
   );
-}
+};
 
-function RightScrollButton(props) {
+const RightScrollButton = ({ onRightScrollButtonClick }) => {
   return (
-    <div className={classes.button} onClick={props.onClick}>
+    <div className={classes["button"]} onClick={onRightScrollButtonClick}>
       <img
-        className={classes.buttonImg}
+        className={classes["button-img"]}
         src="https://assets.website-files.com/60ee32414a2efcb87f4a2940/60ee32414a2efcf93a4a29b3_arrow-scroll.svg"
         alt="RightButton"
       />
     </div>
   );
-}
+};
 
 export { LeftScrollButton, RightScrollButton };
