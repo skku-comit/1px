@@ -5,7 +5,7 @@ const Film = ({id, children}) => {
   return (
     <div
       id={id}
-      className={classes.filmcontainer}
+      className={classes['film-container']}
     >
       {children}
     </div>

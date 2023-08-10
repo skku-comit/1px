@@ -2,17 +2,10 @@
   transform: scaleX(-1);
 }
 
-.button {
-  height: 7vh;
-  width: 7vh;
+.button-img {
   margin-left: 5vw;
-  top: 80vw;
-  left: 80vw;
   z-index: 1;
   cursor: pointer;
-}
-
-.button-img {
   height: 100%;
   width: 100%;
 }

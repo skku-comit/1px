@@ -5,15 +5,14 @@
 .main-sector {
   display: flex;
   border-top: 3vh;
-  height: 80vh;
   overflow: hidden;
 }
 
 .button-sector {
-  width: 20vw;
-  height: 10vh;
-  display: flex;
+  width: 15vw;
+  height: 8vh;
   position: fixed;
   bottom: 2vh;
   right: 5vw;
+  display: flex;
 }

@@ -1,12 +1,12 @@
 .introduction {
   position: absolute;
+  font-size: 10em;
   font-weight: bold;
   top: 8vh;
-  width: 70vw;
-  height: 65vh;
+  width: 30vw;
+  height: 50vh;
   justify-content: left;
   margin-left: 0.5vw;
   margin-right: 3vw;
   margin-top: 0.1vh;
-  font-size: 10em;
 }
