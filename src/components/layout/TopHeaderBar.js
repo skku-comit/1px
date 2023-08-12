@@ -11,10 +11,10 @@ const TopHeaderBar = () => {
         <div className={classes["logo-container"]}>1PX</div>
       </Link>
       <Link to={"./about"} className={classes["link-decoration"]}>
-        <div className={classes["about-container"]}>About</div>
+        <div className={classes["header-container"]}>About</div>
       </Link>
       <Link to={"./guest-book"} className={classes["link-decoration"]}>
-        <div className={classes["guestbook-container"]}>Guest Book</div>
+        <div className={classes["header-container"]}>Guest Book</div>
       </Link>
     </div>
   );
