@@ -1,8 +1,11 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 .header {
+  font-family: 'Pretendard';
   position: fixed;
-  width: 20vw;
+  width: 100vw;
+  height: 7.41vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 5px;
 }
@@ -11,13 +14,26 @@
   font-weight: lighter;
   font-size: 3rem;
   cursor: pointer;
+  padding-right: 4.68vw;
+  padding-left: 18.91vw;
 }
 
 .header-container {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.04vw;
+  line-height: 2.22vh;
+  text-decoration: none;
+  color: #00031c;
   cursor: pointer;
+  padding-right: 2.65vw;
 }
 
 .link-decoration {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.04vw;
+  line-height: 2.22vh;
   text-decoration: none;
-  color: black;
+  color: #00031c;
 }
