@@ -95,7 +95,7 @@ const MainPage = () => {
   return (
     <div className={classes['body']} ref={scrollData}>
       <div className={classes['main-sector']}>
-        <MainSection ref={mainSectionInfo} />
+        {/* <MainSection ref={mainSectionInfo} /> */}
         <FilmSection
           ref={filmSectionInfo}
         ></FilmSection>
