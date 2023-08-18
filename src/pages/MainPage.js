@@ -43,7 +43,7 @@ const MainPage = () => {
       });
       setCurrentFocusedElement(currentFocusedElement - 1);
     }
-  }
+  };
 
   //버튼 클릭시 오른쪽 필름으로 화면이동 이벤트
   const clickRightScrollButtonHandler = () => {
@@ -59,7 +59,7 @@ const MainPage = () => {
       });
       setCurrentFocusedElement(currentFocusedElement + 1);
     }
-  }
+  };
 
   //스크롤 바로 이동시에 중앙에 위치한 필름 넘버 감지
   const scrollGetInfoHandler = () => {
@@ -90,22 +90,24 @@ const MainPage = () => {
     if (scrollX > 4700) {
       setCurrentFocusedElement(7);
     }
-  }
+  };
 
   return (
     <div className={classes['body']} ref={scrollData}>
       <div className={classes['main-sector']}>
         <MainSection ref={mainSectionInfo} />
-        <FilmSection
-          ref={filmSectionInfo}
-        ></FilmSection>
+        <FilmSection ref={filmSectionInfo}></FilmSection>
       </div>
       <div className={classes['button-sector']}>
-        <LeftScrollButton onLeftScrollButtonClick={clickLeftScrollButtonHandler} />
-        <RightScrollButton onRightScrollButtonClick={clickRightScrollButtonHandler} />
+        <LeftScrollButton
+          onLeftScrollButtonClick={clickLeftScrollButtonHandler}
+        />
+        <RightScrollButton
+          onRightScrollButtonClick={clickRightScrollButtonHandler}
+        />
       </div>
     </div>
   );
-}
+};
 
 export default MainPage;
