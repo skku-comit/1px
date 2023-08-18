@@ -95,8 +95,10 @@ const MainPage = () => {
   return (
     <div className={classes['body']} ref={scrollData}>
       <div className={classes['main-sector']}>
-        <MainSection ref={mainSectionInfo} />
-        <FilmSection ref={filmSectionInfo}></FilmSection>
+        {/* <MainSection ref={mainSectionInfo} /> */}
+        <FilmSection
+          ref={filmSectionInfo}
+        ></FilmSection>
       </div>
       <div className={classes['button-sector']}>
         <LeftScrollButton
