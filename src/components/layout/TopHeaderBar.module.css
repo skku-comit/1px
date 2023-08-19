@@ -38,3 +38,11 @@
   text-decoration: none;
   color: #00031c;
 }
+
+.link-decoration:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+}
