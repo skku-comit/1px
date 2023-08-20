@@ -1,4 +1,4 @@
-import "./App.css";
+import './App.css';
 import reset from 'styled-reset';
 import { createGlobalStyle } from 'styled-components';
 import TopHeaderBar from './components/layout/TopHeaderBar';
@@ -17,7 +17,7 @@ import {
   IframePage7,
 } from './pages/IframePage';
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 
 const GlobalStyle = createGlobalStyle`${reset}
     /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -71,7 +71,7 @@ const GlobalStyle = createGlobalStyle`${reset}
 function App() {
   return (
     <div className="App">
-      <GlobalStyle/>
+      <GlobalStyle />
       <TopHeaderBar />
       <Routes>
         <Route path="/" element={<MainPage />} />
