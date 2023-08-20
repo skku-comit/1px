@@ -24,7 +24,7 @@ export const IframePage2 = () => {
 export const IframePage3 = () => {
   return (
     <iframe
-      src="https://1px-diary.vercel.app"
+      src="https://toothless8392.github.io/EEAaO/"
       title="YouTube video player"
       className={classes['iframe-container']}
     />
