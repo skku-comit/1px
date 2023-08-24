@@ -20,7 +20,7 @@ const TopHeaderBar = () => {
 
   const headerStyle = {
     backgroundColor: isIframe1Page
-      ? 'red' // Change this to your desired style for the iframe1 page
+      ? 'white' // Change this to your desired style for the iframe1 page
       : isIframe2Page
       ? '#D0EAE0' // Change this to your desired style for the iframe2 page
       : isIframe3Page
