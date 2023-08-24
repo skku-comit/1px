@@ -9,10 +9,12 @@
   align-items: center;
   gap: 50px;
   padding: 5px;
+  z-index: 2;
 }
 
 .logo-container {
-  margin-left: 18.9vw;
+  /* margin-left: 18.9vw; */
+  margin-left: 15vw;
   font-weight: lighter;
   font-size: 3rem;
   cursor: pointer;

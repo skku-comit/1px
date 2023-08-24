@@ -16,7 +16,7 @@ export const IframePage2 = () => {
     <iframe
       src="https://1px-string-page.vercel.app/"
       title="YouTube video player"
-      className={classes['iframe-container']}
+      className={`${classes['string-page']} ${classes['iframe-container']}`}
     />
   );
 };
