@@ -27,7 +27,7 @@ const FilmSection = React.forwardRef((props, ref) => {
           address="./iframe1"
           img={film1}
           alt="The Devil Wears Prada"
-          title="악마는 프라다를 입는다."
+          title="악마는 프라다를 입는다"
           designer="강지원"
           developer="박준서"
         ></Film>
