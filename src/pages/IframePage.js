@@ -4,7 +4,7 @@ import classes from './IframePage.module.css';
 export const IframePage1 = () => {
   return (
     <iframe
-      src="https://prada-4xvmbud3d-parkjs101.vercel.app"
+      src="https://prada-psi.vercel.app"
       title="YouTube video player"
       className={classes['iframe-container']}
     />
