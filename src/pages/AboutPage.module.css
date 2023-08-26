@@ -1,14 +1,4 @@
 .body{
     width: 100vw;
-    height: 190vh;
-}
-.description {
-    position: relative;
-    top: 20.27vh;
-    left: 18.9vw;
-}
-.member {
-    /* display: absolute; */
-    margin-top: 40.09vh;
-    margin-left: 18.9vw;
+    height: 100vh;
 }
