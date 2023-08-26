@@ -1,27 +1,27 @@
 // imports
-import React from "react";
+import React from 'react';
 
 // components
-import Film from "./Film";
+import Film from './Film';
 
 // css
-import classes from "./Filmsection.module.css";
+import classes from './Filmsection.module.css';
 
 // images
-import filmBody from "../../assets/main/film_body.svg";
-import film1 from "../../assets/main/film1alt.svg";
-import film2 from "../../assets/main/film2alt.svg";
-import film3 from "../../assets/main/film3alt.svg";
-import film4 from "../../assets/main/film4alt.svg";
-import film5 from "../../assets/main/film5alt.svg";
-import film6 from "../../assets/main/film6alt.svg";
-import film7 from "../../assets/main/film7alt.svg";
+import filmBody from '../../assets/newFIlm.svg';
+import film2 from '../../assets/main/film2alt.svg';
+import film3 from '../../assets/main/film3alt.svg';
+import film4 from '../../assets/main/film4alt.svg';
+import film5 from '../../assets/main/film5alt.svg';
+import film1 from '../../assets/main/film1alt.svg';
+import film6 from '../../assets/main/film6alt.svg';
+import film7 from '../../assets/main/film7alt.svg';
 
 const FilmSection = React.forwardRef((props, ref) => {
   return (
-    <div className={classes["films-container"]}>
+    <div className={classes['films-container']}>
       <img src={filmBody} alt="Film body" className={classes.filmbody} />
-      <div ref={ref} className={classes["films-content"]}>
+      <div ref={ref} className={classes['films-content']}>
         <Film
           id="0"
           address="./iframe1"
