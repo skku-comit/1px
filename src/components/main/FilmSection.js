@@ -8,7 +8,7 @@ import Film from './Film';
 import classes from './Filmsection.module.css';
 
 // images
-import { ReactComponent as Filmbody } from '../../assets/images/film_body.svg';
+import filmBody from '../../assets/images/newFIlm.svg';
 import film1 from '../../assets/images/film1alt.svg';
 import film2 from '../../assets/images/film2alt.svg';
 import film3 from '../../assets/images/film3alt.svg';
@@ -20,7 +20,7 @@ import film7 from '../../assets/images/film7alt.svg';
 const FilmSection = React.forwardRef((props, ref) => {
   return (
     <div className={classes['films-container']}>
-      <Filmbody />
+      <img src={filmBody} alt="Film body" className={classes.filmbody} />
       <div ref={ref} className={classes['films-content']}>
         <Film
           id="0"

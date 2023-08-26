@@ -1,11 +1,15 @@
-.button-left {
-  transform: scaleX(-1);
+
+.button-right {
+  position: absolute;
+  height: 100%;
+  right: 42vw; 
+  cursor: pointer;
 }
 
-.button-img {
-  margin-left: 5vw;
-  z-index: 1;
+.button-left {
+  position: absolute;
+  left: 43.2vw;
+  height: 3.76vh;
   cursor: pointer;
-  height: 100%;
-  width: 100%;
+  
 }

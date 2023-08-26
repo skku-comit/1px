@@ -8,8 +8,9 @@
 
 .films-container {
   position: absolute;
-  /* left: 70vw; */
-  top: 15vh;
+  height: 86.53vh;
+  top: 5vh;
+  left: 80.74vw;
   flex-shrink: 0;
   min-width: 100%;
   z-index: 0;
@@ -17,12 +18,17 @@
 
 .films-content {
   display: flex;
-  height: 60vh;
   position: absolute;
-  margin-left: 0.34%;
-  margin-right: 0.35%;
-  top: 11.8%;
-  bottom: 12%;
-  width: 100%;
-  height: 74.7%;
+  margin-left: 0.1%;
+  top: 5.21%;
+  left: 0;
+
+  height: 89%;
+}
+
+.filmbody {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 86.53vh;
 }
