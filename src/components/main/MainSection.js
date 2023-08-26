@@ -4,7 +4,7 @@ import React from 'react';
 // css
 import classes from './MainSection.module.css';
 
-import logo from '../../assets/IntroLogo.png';
+import logo from '../../assets/Intro.svg';
 import subIntro from '../../assets/subIntro.svg';
 import arrow from '../../assets/arrow.svg';
 
