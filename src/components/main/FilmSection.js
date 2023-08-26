@@ -1,38 +1,27 @@
 // imports
-import React from 'react';
+import React from "react";
 
 // components
-import Film from './Film';
+import Film from "./Film";
 
 // css
-import classes from './Filmsection.module.css';
+import classes from "./Filmsection.module.css";
 
 // images
-<<<<<<< HEAD
-import { ReactComponent as Filmbody } from '../../assets/images/main/film_body.svg';
-import film1 from '../../assets/images/main/film1alt.svg';
-import film2 from '../../assets/images/main/film2alt.svg';
-import film3 from '../../assets/images/main/film3alt.svg';
-import film4 from '../../assets/images/main/film4alt.svg';
-import film5 from '../../assets/images/main/film5alt.svg';
-import film6 from '../../assets/images/main/film6alt.svg';
-import film7 from '../../assets/images/main/film7alt.svg';
-=======
-import filmBody from '../../assets/images/newFIlm.svg';
-import film1 from '../../assets/images/film1alt.svg';
-import film2 from '../../assets/images/film2alt.svg';
-import film3 from '../../assets/images/film3alt.svg';
-import film4 from '../../assets/images/film4alt.svg';
-import film5 from '../../assets/images/film5alt.svg';
-import film6 from '../../assets/images/film6alt.svg';
-import film7 from '../../assets/images/film7alt.svg';
->>>>>>> 4aaf7b7f05f1e1fd1aa6e372a589095d1f2a51b3
+import filmBody from "../../assets/images/main/film_body.svg";
+import film1 from "../../assets/images/main/film1alt.svg";
+import film2 from "../../assets/images/main/film2alt.svg";
+import film3 from "../../assets/images/main/film3alt.svg";
+import film4 from "../../assets/images/main/film4alt.svg";
+import film5 from "../../assets/images/main/film5alt.svg";
+import film6 from "../../assets/images/main/film6alt.svg";
+import film7 from "../../assets/images/main/film7alt.svg";
 
 const FilmSection = React.forwardRef((props, ref) => {
   return (
-    <div className={classes['films-container']}>
+    <div className={classes["films-container"]}>
       <img src={filmBody} alt="Film body" className={classes.filmbody} />
-      <div ref={ref} className={classes['films-content']}>
+      <div ref={ref} className={classes["films-content"]}>
         <Film
           id="0"
           address="./iframe1"
