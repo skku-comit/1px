@@ -24,7 +24,7 @@ const TopHeaderBar = () => {
       : isIframe2Page
       ? '' // Change this to your desired style for the iframe2 page
       : isIframe3Page
-      ? 'green' // Change this to your desired style for the iframe3 page
+      ? 'grey' // Change this to your desired style for the iframe3 page
       : isIframe4Page
       ? 'white' // Change this to your desired style for the iframe4 page
       : isIframe5Page
