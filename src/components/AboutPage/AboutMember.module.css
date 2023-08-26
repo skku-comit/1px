@@ -4,13 +4,15 @@
     margin: 0;
     padding: 0;
 }
-.Members {
+
+.members {
     display: grid;
     grid-template-columns: 62.18vw;
-    
+    width: 60%;
+    padding: 10% 20%;
 }
 
-.Members_name {
+.members-name {
     color: var(--black, #00031C);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Pretendard;
@@ -20,20 +22,22 @@
     line-height: normal;
 }
 
-.Members_description{
+.members-description{
     color: var(--black, #00031C);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Pretendard;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.875rem;/* 187.5% */
+    line-height: 1.875rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
 }
 
 .Members_members {
     display: grid;
-    grid-template-columns: repeat(4,14.53vw);
-    grid-template-rows: repeat(2, 35.83vh);
-    row-gap: 60px;
-    column-gap: 30px;
+    grid-template-columns: repeat(4,16vw);
+    grid-template-rows: repeat(2, 30vh);
+    row-gap: 80px;
+    column-gap: 20px;
 }

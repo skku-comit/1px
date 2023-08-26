@@ -8,7 +8,7 @@ import Film from './Film';
 import classes from './Filmsection.module.css';
 
 // images
-import filmBody from '../../assets/images/newFIlm.svg';
+import filmBody from '../../assets/images/main/film_body.svg';
 import film1 from '../../assets/images/main/film1alt.svg';
 import film2 from '../../assets/images/main/film2alt.svg';
 import film3 from '../../assets/images/main/film3alt.svg';
