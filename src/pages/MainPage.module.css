@@ -9,10 +9,10 @@
 }
 
 .button-sector {
-  width: 15vw;
-  height: 8vh;
-  position: fixed;
-  bottom: 2vh;
-  right: 5vw;
+  position: absolute;
+  top: 93.54vh;
+  width: 100vw;
+  height: 3.76vh;
   display: flex;
+  position: fixed;
 }

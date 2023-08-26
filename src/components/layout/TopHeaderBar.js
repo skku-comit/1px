@@ -5,7 +5,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import classes from './TopHeaderBar.module.css';
 
 //img
-import logo from '../../assets/images/logo.svg';
+import logo from '../../assets/images/layout/logo.svg';
 
 const TopHeaderBar = () => {
   const location = useLocation();
@@ -49,7 +49,9 @@ const TopHeaderBar = () => {
             : classes['link-decoration']
         }
       >
-        <div className={classes['header-container']}>ABOUT</div>
+        <div className={`${classes['header-container']} ${classes['about']}`}>
+          ABOUT
+        </div>
       </NavLink>
       <NavLink
         to={'./guest-book'}
@@ -59,7 +61,9 @@ const TopHeaderBar = () => {
             : classes['link-decoration']
         }
       >
-        <div className={classes['header-container']}>GUESTBOOK</div>
+        <div className={`${classes['header-container']} ${classes['guest']}`}>
+          GUESTBOOK
+        </div>
       </NavLink>
     </div>
   );

@@ -1,5 +1,3 @@
-import React from "react";
-
 // images
 import img1 from "../../assets/aboutImages/mod_exhibition.png";
 import img2 from "../../assets/aboutImages/main_poster.png";
