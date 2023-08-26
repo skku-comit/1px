@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../assets/images/about_exhibition_image.svg';
+import img from '../../assets/images/AboutPage/about_exhibition_image.svg';
 import classes from './AboutDescription.module.css';
 
 function AboutDescription() {

@@ -5,7 +5,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import classes from './TopHeaderBar.module.css';
 
 //img
-import logo from '../../assets/images/logo.svg';
+import logo from '../../assets/images/layout/logo.svg';
 
 const TopHeaderBar = () => {
   const location = useLocation();

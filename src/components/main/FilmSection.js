@@ -8,14 +8,14 @@ import Film from './Film';
 import classes from './Filmsection.module.css';
 
 // images
-import { ReactComponent as Filmbody } from '../../assets/images/film_body.svg';
-import film1 from '../../assets/images/film1alt.svg';
-import film2 from '../../assets/images/film2alt.svg';
-import film3 from '../../assets/images/film3alt.svg';
-import film4 from '../../assets/images/film4alt.svg';
-import film5 from '../../assets/images/film5alt.svg';
-import film6 from '../../assets/images/film6alt.svg';
-import film7 from '../../assets/images/film7alt.svg';
+import { ReactComponent as Filmbody } from '../../assets/images/main/film_body.svg';
+import film1 from '../../assets/images/main/film1alt.svg';
+import film2 from '../../assets/images/main/film2alt.svg';
+import film3 from '../../assets/images/main/film3alt.svg';
+import film4 from '../../assets/images/main/film4alt.svg';
+import film5 from '../../assets/images/main/film5alt.svg';
+import film6 from '../../assets/images/main/film6alt.svg';
+import film7 from '../../assets/images/main/film7alt.svg';
 
 const FilmSection = React.forwardRef((props, ref) => {
   return (

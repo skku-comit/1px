@@ -1,6 +1,6 @@
 import React from 'react';
-import image from "../../assets/images/about_member.png";
-import plus from  "../../assets/images/about_+.svg";
+import image from "../../assets/images/AboutPage/about_member.png";
+import plus from  "../../assets/images/AboutPage/about_+.svg";
 import classes from "./MemberItem.module.css";
 
 function MemeberItem(props) {
