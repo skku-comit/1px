@@ -37,7 +37,7 @@
 .Members_members {
     display: grid;
     grid-template-columns: repeat(4,16vw);
-    grid-template-rows: repeat(2, 30vh);
+    grid-template-rows: repeat(2, 34vh);
     row-gap: 80px;
-    column-gap: 20px;
+    column-gap: 50px;
 }
