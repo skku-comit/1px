@@ -1,5 +1,5 @@
 .comment-card {
-  background-image: url("../../assets/images/guestbook/guestbook_commentCard.svg");
+  background-image: url("../../assets/guestbook/guestbook_commentCard.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
@@ -21,7 +21,7 @@
 }
 
 .delete-button {
-  background-image: url("../../assets/images/guestbook/guestbook_delete_button.png");
+  background-image: url("../../assets/guestbook/guestbook_delete_button.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;

@@ -4,9 +4,9 @@ import React from 'react';
 // css
 import classes from './MainSection.module.css';
 
-import logo from '../../assets/images/Intro.svg';
-import subIntro from '../../assets/images/subIntro.svg';
-import arrow from '../../assets/images/arrow.svg';
+import logo from '../../assets/Intro.svg';
+import subIntro from '../../assets/subIntro.svg';
+import arrow from '../../assets/arrow.svg';
 
 const MainSection = React.forwardRef((props, ref) => {
   return (

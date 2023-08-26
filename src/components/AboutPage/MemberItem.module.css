@@ -7,35 +7,27 @@
     flex-shrink: 0;
     flex-direction: column;
 }
-.snowman {
-    width: 14.37vw;
-    height: 28.7vh;
-    flex-shrink: 0;
-    border: 1px solid var(--black, #00031C);
-    margin: 0;
 
+.snowman {
+    width: 10vw;
+    height: 24vh;
+    flex-shrink: 0;
+    margin: 0;
 }
+
 .nameplus {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 2rem;
 }
-.plus {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    margin: 0 !important;
-}
-.nameplus p {
-    color: var(--gray-3, #93979F);
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Pretendard;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.4375rem;; /* 127.778% */
-    margin: 0;
+
+.job {
+    color: grey;
+    font-weight: bold;
+    font-size: 1.6rem;
 }

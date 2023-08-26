@@ -1,7 +1,7 @@
 import classes from './ScrollButton.module.css';
 
-import leftScroll from '../../assets/images/left-scroll.svg';
-import rightScroll from '../../assets/images/right-scroll.svg';
+import leftScroll from '../../assets/left-scroll.svg';
+import rightScroll from '../../assets/right-scroll.svg';
 
 const LeftScrollButton = ({ onLeftScrollButtonClick }) => {
   return (
