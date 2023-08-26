@@ -4,32 +4,46 @@
   font-family: 'Pretendard';
   position: fixed;
   width: 100vw;
-  height: 7.41vh;
+  height: 5vh;
   display: flex;
   align-items: center;
   gap: 50px;
   padding: 5px;
   z-index: 2;
+  position: relative;
+  position: fixed;
 }
 
 .logo-container {
-  /* margin-left: 18.9vw; */
-  margin-left: 15vw;
-  font-weight: lighter;
-  font-size: 3rem;
+  position: absolute;
+  left: 48.93%;
   cursor: pointer;
-  padding: 0 1rem;
+  width: 2.07%;
+  top: 26.25%;
 }
 
 .header-container {
   font-style: normal;
   font-weight: 500;
-  font-size: 1.04vw;
-  line-height: 2.22vh;
+  font-size: 0.625vw;
+  line-height: 1.11vh;
   text-decoration: none;
   color: #00031c;
   cursor: pointer;
-  padding-right: 2.65vw;
+   
+}
+
+.about {
+  position: absolute;
+  left: 0.93%;
+  top: 39%;
+}
+
+.guest {
+  position: absolute;
+  right: 0.93%;
+  top: 39%;
+
 }
 
 .link-decoration {

@@ -1,12 +1,24 @@
 .introduction {
   position: absolute;
-  font-size: 10em;
-  font-weight: bold;
-  top: 8vh;
-  width: 30vw;
-  height: 50vh;
+  top: 8.819vh;
+  left: 3.08vw;
+  width: 70.97vw;
+  height: 64.65vh;;
   justify-content: left;
-  margin-left: 0.5vw;
-  margin-right: 3vw;
-  margin-top: 0.1vh;
+}
+
+.logo {
+  height: 100%;
+}
+
+.sub {
+  position: absolute;
+  top: 78.95vh;
+  left: 3.98vw;
+}
+
+.arrow {
+  position: absolute;
+  top: 89.51vh;
+  left: 3.98vw;
 }
