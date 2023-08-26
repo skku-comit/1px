@@ -16,7 +16,7 @@
     color: var(--black, #00031C);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Pretendard;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -26,12 +26,12 @@
     color: var(--black, #00031C);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Pretendard;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.875rem;
     margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 
 .Members_members {

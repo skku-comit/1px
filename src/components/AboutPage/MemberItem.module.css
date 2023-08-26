@@ -22,14 +22,13 @@
     object-fit: contain; /* Maintain aspect ratio */
   }
 
-
 .nameplus {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
+    margin: 40px 0 20px 0;
     font-weight: bold;
     font-size: 2rem;
 }
