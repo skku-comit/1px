@@ -35,6 +35,7 @@ const MainPage = () => {
       mainSectionInfo.current,
       ...filmSectionInfo.current.children,
     ];
+    
     if (currentFocusedElement > 0) {
       // console.log(filmList);
       filmList[currentFocusedElement - 1].scrollIntoView({
@@ -65,37 +66,37 @@ const MainPage = () => {
     const scrollX = window.scrollX;
     console.log(scrollX);
 
-    if (scrollX > 0 && scrollX <= 850) {
-      setCurrentFocusedElement(0);
-    }
-    if (scrollX > 850 && scrollX <= 1750) {
-      setCurrentFocusedElement(1);
-    }
-    if (scrollX > 1750 && scrollX <= 2880) {
-      setCurrentFocusedElement(2);
-    }
-    if (scrollX > 2880 && scrollX <= 3800) {
-      setCurrentFocusedElement(3);
-    }
-    if (scrollX > 3800 && scrollX <= 4890) {
-      setCurrentFocusedElement(4);
-    }
-    if (scrollX > 4890 && scrollX <= 5940) {
-      setCurrentFocusedElement(5);
-    }
-    if (scrollX > 5940 && scrollX <= 6500) {
-      setCurrentFocusedElement(6);
-    }
-    if (scrollX > 6500) {
-      setCurrentFocusedElement(7);
-    }
+    // if (scrollX > 0 && scrollX <= 850) {
+    //   setCurrentFocusedElement(0);
+    // }
+    // if (scrollX > 850 && scrollX <= 1750) {
+    //   setCurrentFocusedElement(1);
+    // }
+    // if (scrollX > 1750 && scrollX <= 2880) {
+    //   setCurrentFocusedElement(2);
+    // }
+    // if (scrollX > 2880 && scrollX <= 3800) {
+    //   setCurrentFocusedElement(3);
+    // }
+    // if (scrollX > 3800 && scrollX <= 4890) {
+    //   setCurrentFocusedElement(4);
+    // }
+    // if (scrollX > 4890 && scrollX <= 5940) {
+    //   setCurrentFocusedElement(5);
+    // }
+    // if (scrollX > 5940 && scrollX <= 6500) {
+    //   setCurrentFocusedElement(6);
+    // }
+    // if (scrollX > 6500) {
+    //   setCurrentFocusedElement(7);
+    // }
   };
 
   return (
     <div className={classes['body']} ref={scrollData}>
       <div className={classes['main-sector']}>
         <MainSection ref={mainSectionInfo} />
-        <FilmSection ref={filmSectionInfo}></FilmSection>
+        <FilmSection ref={filmSectionInfo}/>
       </div>
       <div className={classes['button-sector']}>
         <LeftScrollButton
