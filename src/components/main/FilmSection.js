@@ -9,11 +9,11 @@ import classes from './Filmsection.module.css';
 
 // images
 import filmBody from '../../assets/newFIlm.svg';
+import film1 from '../../assets/main/film1alt.svg';
 import film2 from '../../assets/main/film2alt.svg';
 import film3 from '../../assets/main/film3alt.svg';
 import film4 from '../../assets/main/film4alt.svg';
 import film5 from '../../assets/main/film5alt.svg';
-import film1 from '../../assets/main/film1alt.svg';
 import film6 from '../../assets/main/film6alt.svg';
 import film7 from '../../assets/main/film7alt.svg';
 
@@ -41,7 +41,7 @@ const FilmSection = React.forwardRef((props, ref) => {
           developer="박태곤"
         ></Film>
         <Film
-          id="3"
+          id="2"
           address="./iframe3"
           img={film3}
           alt="Everything Everywhere All at Once"
@@ -50,7 +50,7 @@ const FilmSection = React.forwardRef((props, ref) => {
           developer="박상혁"
         ></Film>
         <Film
-          id="4"
+          id="3"
           address="./iframe4"
           img={film4}
           alt="Romantic Holiday"
@@ -59,7 +59,7 @@ const FilmSection = React.forwardRef((props, ref) => {
           developer="문지웅"
         ></Film>
         <Film
-          id="5"
+          id="4"
           address="./iframe5"
           img={film5}
           alt="Everything Everywhere All at Once"
@@ -68,7 +68,7 @@ const FilmSection = React.forwardRef((props, ref) => {
           developer="이재욱"
         ></Film>
         <Film
-          id="6"
+          id="5"
           address="./iframe6"
           img={film6}
           alt="Legally Blonde"
@@ -77,7 +77,7 @@ const FilmSection = React.forwardRef((props, ref) => {
           developer="박지환"
         ></Film>
         <Film
-          id="7"
+          id="6"
           address="./iframe7"
           img={film7}
           alt="The French Dispatch"
